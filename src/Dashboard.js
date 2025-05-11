@@ -130,8 +130,8 @@ function AppLayout() {
         </Grid>
 
         {/* To Do Section and State Application */}
-        <Grid container spacing={3}>
-          <Grid item xs={6}>
+        <Grid container spacing={2}>
+          <Grid item xs={3}>
             <Paper sx={{ p: 2 }}>
               <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 2 }}>
                 <Typography variant="h6">To Do</Typography>
@@ -161,7 +161,7 @@ function AppLayout() {
               </List>
             </Paper>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={9}>
             <Paper sx={{ p: 2, mb: 3 }}>
               <Typography variant="h6">State Application</Typography>
               <Box sx={{ mt: 2, display: 'flex', alignItems: 'center', gap: 2 }}>
