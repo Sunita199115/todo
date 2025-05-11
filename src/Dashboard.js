@@ -87,17 +87,20 @@ function AppLayout() {
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <Toolbar />
         
-        {/* Welcome Section */}
-        <Typography variant="h5" sx={{ mb: 3 }}>
-          Welcome Back,
-        </Typography>
-        <Typography variant="h4" sx={{ mb: 4 }}>
-          Kendra Patel
-        </Typography>
+     
 
         {/* Profile Cards */}
-        <Grid container spacing={3} sx={{ mb: 4 }}>
-          <Grid item xs={6}>
+        <Grid container spacing={2} sx={{ mb: 4,display: 'flex'}} >
+          <Grid item xs={2}>
+               {/* Welcome Section */}
+            <Typography variant="h5" sx={{ mb: 3 }}>
+              Welcome Back,
+            </Typography>
+            <Typography variant="h4" sx={{ mb: 4 }}>
+              Kendra Patel
+            </Typography>
+          </Grid>
+          <Grid item xs={5} sx={{ flexGrow: 1 }}>
             <Paper sx={{ p: 2 }}>
               <Typography variant="h6">Credentialing Profile</Typography>
               <Box sx={{ mt: 2 }}>
@@ -112,7 +115,7 @@ function AppLayout() {
               </Box>
             </Paper>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={5} sx={{ flexGrow: 1 }}>
             <Paper sx={{ p: 2 }}>
               <Typography variant="h6">Directory Profile</Typography>
               <Box sx={{ mt: 2 }}>
@@ -140,7 +143,7 @@ function AppLayout() {
               <List>
                 {todoItems.map((item) => (
                   <ListItem key={item.id} sx={{ py: 1 }}>
-                    <ListItemText 
+                    <ListItemText  
                       primary={item.text}
                       secondary={
                         <Typography 
