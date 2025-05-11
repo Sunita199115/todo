@@ -1,5 +1,92 @@
+/* App-wide styles */
 .App {
-  text-align: center;
+  text-align: left;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* Custom styles for Material-UI components */
+.MuiDrawer-paper {
+  border-right: none !important;
+}
+
+.MuiListItem-root {
+  padding: 12px 16px !important;
+}
+
+.MuiListItemIcon-root {
+  min-width: 40px !important;
+}
+
+/* Profile cards */
+.profile-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+/* Progress bars */
+.MuiLinearProgress-root {
+  height: 8px !important;
+  border-radius: 4px;
+}
+
+.MuiLinearProgress-bar {
+  background-color: #1a237e !important;
+}
+
+/* Status badges */
+.status-badge {
+  border-radius: 12px;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status-badge-not-done {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+.status-badge-suggested {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* News alert cards */
+.news-alert-card {
+  background-color: #f5f5f5 !important;
+  box-shadow: none !important;
+  border-radius: 4px;
+}
+
+/* Buttons */
+.MuiButton-contained {
+  text-transform: uppercase !important;
+  font-weight: 500 !important;
+}
+
+.MuiButton-text {
+  color: #1a237e !important;
+}
+
+/* Select dropdown */
+.state-select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+}
+
+/* Checkbox styles */
+.MuiCheckbox-root {
+  color: #1a237e !important;
+}
+
+/* Typography */
+.welcome-text {
+  color: #1a237e;
+  margin-bottom: 24px;
 }
 
 .App-logo {
